@@ -6,5 +6,5 @@
   <img width="375px" src="assets/side-of-toast.png" alt="a side of toast">
 </p>
 <p align='center'>
-I'll have the morning algorithm problems with a cup of coffee and a side of toast, please and thank you.
+I'll have the morning algorithm with a cup of coffee and a side of toast, please and thank you.
 </p>
