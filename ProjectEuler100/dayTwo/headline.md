@@ -1,4 +1,4 @@
-# #ProjectEuler100 Challenge - day 1
+# #ProjectEuler100 Challenge - day 2
 
 ## Problem 2: Even Fibonacci Numbers
 
