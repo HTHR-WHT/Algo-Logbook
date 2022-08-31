@@ -9,4 +9,5 @@ A palindromic number reads the same both ways. The largest palindrome made from 
 Find the largest palindrome made from the product of two n-digit numbers.
 
 > article1.js solution submitted is from freecodecamp.org
+
 > *article2.js is a work in progress for my learning purposes :)
