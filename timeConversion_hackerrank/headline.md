@@ -22,5 +22,7 @@ Note: - 12:00:00AM on a 12-hour clock is 00:00:00 on a 24-hour clock.
 > Output: `19:05:45`
 >> Notes: 
 >> Input string `s`: a time in 12 hour format
+>>
 >> Returns string: the time in 24 hour format
+>>
 >> A single string `s` that represents a time in 12-hour clock format (i.e.: hh:mm:ssAM or hh:mm:ssPM).
