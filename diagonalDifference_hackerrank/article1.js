@@ -35,3 +35,22 @@ function diagonalDifference(arr) {
     }
     return Math.abs(leftDiagonalSum - rightDiagonalSum);
 }
+
+/* Understanding the patterns
+
+Example matrix:
+A00 A01 A02 A03
+A10 A11 A12 A13
+A20 A21 A22 A23
+A30 A31 A32 A33
+
+The primary diagonal is formed by the elements A00, A11, A22, A33.
+
+Condition for Principal Diagonal:
+***The row-column condition is row = column.
+
+The secondary diagonal is formed by the elements A03, A12, A21, A30. 
+
+Condition for Secondary Diagonal:
+***The row-column condition is row + column = numberOfColumns - 1.
+*/
