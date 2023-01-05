@@ -16,5 +16,8 @@ Write a function `min` that takes two arguments and returns their minimum.
 >  
 > Output: `-10`
 >
-
+> Input: `3, -12, 14, 57, 0, 101, -2`
+>
+> Output: `-12`
+>
 
