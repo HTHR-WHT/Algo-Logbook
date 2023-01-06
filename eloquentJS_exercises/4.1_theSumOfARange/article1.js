@@ -1,7 +1,9 @@
 //evaluate whether step is a positive or negative integer based on start and end values
 //default step values of 1 or -1 will only be assigned IF no step value is passed as an argument.
+
 const range = (start, end, step = start < end ? 1 : -1) => {
     let result = [];
+
     //determine proper comparison operators for execution loop condition (middle condition)
     if(step > 0) {
       for(let i = start; i <= end; i += step) result.push(i);
@@ -10,6 +12,7 @@ const range = (start, end, step = start < end ? 1 : -1) => {
     }
     return result;
   };
+  
  //iterate over each value of array and accumulate total 
   const sum = (nums) => {
     let total = 0;
