@@ -19,7 +19,7 @@ As a bonus assignment, modify your `range` function to take an optional third ar
 >  
 > Output: `[5, 4, 3, 2]`
 >
-> Input: `range(1, 10, 2)
+> Input: `range(1, 10, 2)`
 >  
 > Output: `[1, 3, 5, 7, 9]`
 >
