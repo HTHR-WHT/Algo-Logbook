@@ -1,5 +1,4 @@
 //return a NEW array with elements in reverse order
-
 const reverseArray = (arr) => {
     //creating a new array to accumulate reversed elements
     let result = [];
@@ -9,20 +8,19 @@ const reverseArray = (arr) => {
       result.unshift(val);
     }
     return result;
-  };
+};
 
-//use a two pointer approach with a temporary variable and while loop  
+
+//Use a two pointer approach with a temporary variable and while loop  
 const reverseArrayInPlace = (arr) => {
+    //starting our pointers at the first index and last index
+    let left = 0;
+    let right = arr.length -1;
+    //temporary pointer to hold on to values before we reassign
+    let temp;
 
-//starting our pointers at the first index and last index
-let left = 0;
-let right = arr.length -1;
-//temporary pointer to hold on to values before we reassign
-let temp;
-
-//move through the input array until we find the middle
-while(left < right) {
-
+    //move through the input array until we find the middle
+    while(left < right) {
     //store the value of the left pointer before we reassign it with the right pointer value
     temp = arr[left];
     //now it's safe to reassign the left pointer value
@@ -33,8 +31,8 @@ while(left < right) {
     left++;
     //move the right pointer backward
     right--;
-}
-return arr;
+    }
+    return arr;
 };
 
 console.log(reverseArray(["A", "B", "C"]));
