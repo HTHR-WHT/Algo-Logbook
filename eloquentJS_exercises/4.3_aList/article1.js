@@ -40,6 +40,17 @@ const listToArray = (list) => {
     return listValueArray;
 };
 
+//prepend helper function
+
+/* steps
+-function takes an element and a list as arguments
+-creates a new list that adds the element to the front of the input list
+-returns the new list
+ */
+
+const prepend = (element, list) => {
+  return {value: element, rest: list}; 
+};
 
 //console.log(arrayToList([10, 20]));
 //--> {value: 10, rest: {value: 20, rest: null}}
