@@ -18,5 +18,34 @@ const arrayToList = (array) => {
     return newList;
 };
 
+//listToArray function
+
+/* steps
+-function takes in a list and returns an array of the values
+-create an array variable to hold the list values
+-create a node variable that has the list as a value
+-while the current node is not null
+-push the current node value into the array
+-reassign the value of node to the curr node's rest pointer value
+-return the array of list values
+*/
+
+const listToArray = (list) => {
+    let listValueArray = [];
+    let node = list;
+    while(node) {
+        listValueArray.push(node.value);
+        node = node.rest;    
+    }
+    return listValueArray;
+};
+
+
 //console.log(arrayToList([10, 20]));
 //--> {value: 10, rest: {value: 20, rest: null}}
+//console.log(listToArray(arrayToList([10, 20, 30])));
+//--> [10, 20, 30]
+//console.log(prepend(10, prepend(20, null)));
+//--> {value: 10, rest: {value: 20, rest: null}}
+//console.log(nth(arrayToList([10, 20, 30]), 1));
+//--> 20
