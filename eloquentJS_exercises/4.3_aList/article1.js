@@ -52,6 +52,29 @@ const prepend = (element, list) => {
   return {value: element, rest: list}; 
 };
 
+//nth function
+
+/* steps
+-function takes a list and a number as arguments
+-create a counter to track where we are as we traverse list to find element position
+-returns the element at position, or undefined if not found
+ */
+
+const nth = (list, nodePos) => {
+  let nodeCount = 0;
+  let node = list;
+  while(node) {
+    if(nodePos === nodeCount) {
+        return node.value;
+    } else {
+        nodeCount++;
+        node = node.rest;
+    }
+  }
+  return undefined;
+};
+
+
 //console.log(arrayToList([10, 20]));
 //--> {value: 10, rest: {value: 20, rest: null}}
 //console.log(listToArray(arrayToList([10, 20, 30])));
